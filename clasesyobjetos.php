@@ -13,6 +13,6 @@
     }
 
     $persona = new Persona();
-    $persona-> nombre
+    echo $persona-> nombre
 
 ?>
