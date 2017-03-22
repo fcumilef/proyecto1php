@@ -4,15 +4,15 @@
 
         //atributos
         public $nombre = "pedro";
-
+        
         //metodos
-        public function hablar(){
-
+        public function hablar($mensaje){
+            echo $mensaje;
         }
 
     }
 
     $persona = new Persona();
-    echo $persona-> nombre
-
+    //echo $persona->nombre
+    $persona->hablar("saludos desde codigo facilito");
 ?>
