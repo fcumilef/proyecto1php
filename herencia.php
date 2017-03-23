@@ -37,6 +37,7 @@
 
         }
 
+        
         $moto = new Cuatrimoto();
         $moto->estado();
 
