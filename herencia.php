@@ -22,15 +22,22 @@
                     echo "Cuidado, el motor esta prendido<br>";
                 }else{
                     echo "El motor ahora esta encendido<br>";
+                    $this->motor = true;
                 }
             }
         }
 
-        $vehiculo = new Vehiculo();
-            $vehiculo->estado();
-            $vehiculo->encender();
-            $vehiculo->estado(); 
+        class Moto extends Vehiculo{
+            public function estadoMoto(){
+                $this->estado();
+            }
+        }
 
+        class CuatriMoto extends Moto{
 
+        }
+
+        $moto = new Cuatrimoto();
+        $moto->estado();
 
 ?>
