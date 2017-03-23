@@ -17,11 +17,17 @@
             public function verInformacion(){
                 echo "Nombre:" . $this->nombre . "<br>";
                 echo "Edad:" . $this->edad . "<br>";
+                $this->cambiarPass("54321");
                 echo "Password:" . $this->pass . "<br>";                                
+            }
+
+            private function cambiarPass($pass){
+                $this->pass = $pass;
             }
         }
 
         $facebook = new Facebook("felipe cumilef", 22, 12345);
+
         $facebook->verInformacion();
 
 
