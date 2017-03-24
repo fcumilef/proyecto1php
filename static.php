@@ -16,16 +16,15 @@
         }
         
         public static function bienvenida2(){
-            echo "Binevenidos a " . $This->nombre;
+            echo "Bienvenidos" . self::$url;
         }    
-
     }
 
-$pagina = new Pagina();
-$pagina->bienvenida();
+            class Web extends Pagina{
 
+        }
 
-
+Web::bienvenida2();
 
 
 ?>
