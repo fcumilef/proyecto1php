@@ -15,7 +15,9 @@
 
         }
         
-        
+        public static function bienvenida2(){
+            echo "Binevenidos a " . $This->nombre;
+        }    
 
     }
 
